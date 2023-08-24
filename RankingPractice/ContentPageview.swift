@@ -11,12 +11,15 @@ struct ContentPageview: View {
     @Binding var selection : TabType
     var body: some View {
         TabView(selection: $selection ){
-            Text("買って住みたい").tag(TabType.rent)
-            Text("借りて住みたい").tag(TabType.buy)
+        
+                TownRankingListView(selection: selection).tag(TabType.rent)
+           
+            TownRankingListView(selection: selection).tag(TabType.buy)
             
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
         .animation(.linear(duration: 0.3))
+        .edgesIgnoringSafeArea(.bottom)
         
     }
 }
