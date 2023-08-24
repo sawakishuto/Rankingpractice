@@ -33,7 +33,6 @@ struct UpperTabView: View {
             Rectangle().fill(self.selection == .rent ? Color.red:Color.blue)
                 .frame(width: geometorySize.width / 2, height: 2.0 )
                 .offset(x: self.selection == .rent ? .zero: geometorySize.width / 2 ,y: .zero)
-                .animation(.linear(duration:0.3))
         }
     }
 }

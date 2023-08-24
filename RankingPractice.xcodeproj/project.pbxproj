@@ -15,6 +15,7 @@
 		084D6F322A973E7C009B7244 /* RankingPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6F312A973E7C009B7244 /* RankingPracticeUITests.swift */; };
 		084D6F342A973E7C009B7244 /* RankingPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6F332A973E7C009B7244 /* RankingPracticeUITestsLaunchTests.swift */; };
 		084D6F412A973F48009B7244 /* UpperTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6F402A973F48009B7244 /* UpperTabView.swift */; };
+		084D6F432A9746F7009B7244 /* ContentPageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6F422A9746F7009B7244 /* ContentPageview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		084D6F312A973E7C009B7244 /* RankingPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingPracticeUITests.swift; sourceTree = "<group>"; };
 		084D6F332A973E7C009B7244 /* RankingPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		084D6F402A973F48009B7244 /* UpperTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperTabView.swift; sourceTree = "<group>"; };
+		084D6F422A9746F7009B7244 /* ContentPageview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPageview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				084D6F162A973E79009B7244 /* RankingPracticeApp.swift */,
 				084D6F182A973E79009B7244 /* ContentView.swift */,
+				084D6F422A9746F7009B7244 /* ContentPageview.swift */,
 				084D6F402A973F48009B7244 /* UpperTabView.swift */,
 				084D6F1A2A973E7C009B7244 /* Assets.xcassets */,
 				084D6F1C2A973E7C009B7244 /* Preview Content */,
@@ -263,6 +266,7 @@
 				084D6F192A973E79009B7244 /* ContentView.swift in Sources */,
 				084D6F412A973F48009B7244 /* UpperTabView.swift in Sources */,
 				084D6F172A973E79009B7244 /* RankingPracticeApp.swift in Sources */,
+				084D6F432A9746F7009B7244 /* ContentPageview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
