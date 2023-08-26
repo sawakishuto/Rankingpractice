@@ -50,7 +50,15 @@ struct Navigationstack: View {
                     Button(action: {self.path.removeAll()}, label: {Text("はじめのページへ")})
                 }
             }
+        }.onAppear{
+            ShowFirstPage()
         }
+    }
+    
+
+
+    func ShowFirstPage(){
+        path = ["🐱","🐥"]
     }
 }
 struct Navigationstack_Previews: PreviewProvider {
