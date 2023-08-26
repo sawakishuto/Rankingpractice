@@ -11,7 +11,7 @@ import SwiftUI
 struct RankingPracticeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Navigationstack()
         }
     }
 }
