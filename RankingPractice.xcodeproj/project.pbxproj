@@ -22,6 +22,7 @@
 		084D6F8A2A99A705009B7244 /* Team_MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6F892A99A705009B7244 /* Team_MemberModel.swift */; };
 		084D6F8C2A99B931009B7244 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6F8B2A99B931009B7244 /* TeamView.swift */; };
 		086209A22A9A25BF00FF6A76 /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086209A12A9A25BF00FF6A76 /* MemberView.swift */; };
+		086209A42A9B15EE00FF6A76 /* AnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086209A32A9B15EE00FF6A76 /* AnimalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		084D6F892A99A705009B7244 /* Team_MemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team_MemberModel.swift; sourceTree = "<group>"; };
 		084D6F8B2A99B931009B7244 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		086209A12A9A25BF00FF6A76 /* MemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
+		086209A32A9B15EE00FF6A76 /* AnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				084D6F182A973E79009B7244 /* ContentView.swift */,
 				084D6F462A9750E6009B7244 /* TownRowView.swift */,
 				084D6F872A99A6C3009B7244 /* Navigationstack.swift */,
+				086209A32A9B15EE00FF6A76 /* AnimalView.swift */,
 				086209A12A9A25BF00FF6A76 /* MemberView.swift */,
 				084D6F8B2A99B931009B7244 /* TeamView.swift */,
 				084D6F892A99A705009B7244 /* Team_MemberModel.swift */,
@@ -284,6 +287,7 @@
 				084D6F8A2A99A705009B7244 /* Team_MemberModel.swift in Sources */,
 				084D6F882A99A6C3009B7244 /* Navigationstack.swift in Sources */,
 				084D6F192A973E79009B7244 /* ContentView.swift in Sources */,
+				086209A42A9B15EE00FF6A76 /* AnimalView.swift in Sources */,
 				084D6F412A973F48009B7244 /* UpperTabView.swift in Sources */,
 				084D6F452A974C37009B7244 /* TownRankingListView.swift in Sources */,
 				084D6F172A973E79009B7244 /* RankingPracticeApp.swift in Sources */,

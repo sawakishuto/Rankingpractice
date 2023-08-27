@@ -9,7 +9,8 @@ import SwiftUI
 
 
 struct Navigationstack: View {
-    let animals = ["🐱", "🐶", "🐥"]
+    @State var animals = ["🐱", "🐶", "🐥"]
+    @State  var name:[String:String] = ["🐱": "ねこ", "🐶": "いぬ","🐥":"ひよこ"]
 
     @State private var path = [String]()
 
@@ -17,38 +18,11 @@ struct Navigationstack: View {
         NavigationStack(path: $path) {
             List {
                 ForEach(animals, id: \.self) { animal in
-                    Button {
-                        let name = ["🐱": "ねこ", "🐶": "いぬ","🐥":"ひよこ"]
-                            guard let name = name[animal] else {
-                                return
-                            }
-                            path.append(name)
-                        
-                    } label: {
-                        Text(animal)
-                    }
+                    NavigationLink(value: animal, label: {Text(animal)})
                 }
             }
             .navigationDestination(for: String.self) { name in
-                VStack{
-                    Text(name)
-                    List {
-                        ForEach(animals, id: \.self) { animal in
-                            Button {
-                                let name = ["🐱": "ねこ", "🐶": "いぬ","🐥":"ひよこ"]
-                                    guard let name = name[animal] else {
-                                        return
-                                    }
-                                    path.append(name)
-                                
-                            } label: {
-                                Text(animal)
-                            }
-                        }
-                    }
-                    Button(action: {self.path.removeLast()}, label: {Text("削除")})
-                    Button(action: {self.path.removeAll()}, label: {Text("はじめのページへ")})
-                }
+                AnimalView(path:$path, name: name)
             }
         }.onAppear{
             ShowFirstPage()
