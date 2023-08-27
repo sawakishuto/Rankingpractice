@@ -23,6 +23,7 @@
 		084D6F8C2A99B931009B7244 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6F8B2A99B931009B7244 /* TeamView.swift */; };
 		086209A22A9A25BF00FF6A76 /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086209A12A9A25BF00FF6A76 /* MemberView.swift */; };
 		086209A42A9B15EE00FF6A76 /* AnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086209A32A9B15EE00FF6A76 /* AnimalView.swift */; };
+		086209A72A9B3BD700FF6A76 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 086209A62A9B3BD700FF6A76 /* SwiftUIX */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				086209A72A9B3BD700FF6A76 /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +172,9 @@
 			dependencies = (
 			);
 			name = RankingPractice;
+			packageProductDependencies = (
+				086209A62A9B3BD700FF6A76 /* SwiftUIX */,
+			);
 			productName = RankingPractice;
 			productReference = 084D6F132A973E79009B7244 /* RankingPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -242,6 +247,9 @@
 				Base,
 			);
 			mainGroup = 084D6F0A2A973E79009B7244;
+			packageReferences = (
+				086209A52A9B3BD700FF6A76 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
 			productRefGroup = 084D6F142A973E79009B7244 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -613,6 +621,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		086209A52A9B3BD700FF6A76 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		086209A62A9B3BD700FF6A76 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 086209A52A9B3BD700FF6A76 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 084D6F0B2A973E79009B7244 /* Project object */;
 }

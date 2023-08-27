@@ -6,15 +6,21 @@
 //
 
 import SwiftUI
+import SwiftUIX
 
 
 struct Navigationstack: View {
+    @State private var text:String = ""
     @State var animals = ["🐱", "🐶", "🐥"]
     @State  var name:[String:String] = ["🐱": "ねこ", "🐶": "いぬ","🐥":"ひよこ"]
 
     @State private var path = [String]()
 
     var body: some View {
+        VStack{
+            CocoaTextField("ああ", text: $text)
+                                .isInitialFirstResponder(true) // これ
+                                
         NavigationStack(path: $path) {
             List {
                 ForEach(animals, id: \.self) { animal in
@@ -28,7 +34,7 @@ struct Navigationstack: View {
             ShowFirstPage()
         }
     }
-    
+    }
 
 
     func ShowFirstPage(){
